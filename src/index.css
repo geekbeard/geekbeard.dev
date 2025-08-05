@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GeekBeard Fashion Tech Design System - Sleek & Modern */
+
+@layer base {
+  :root {
+    /* Fashion Tech Color Palette */
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 10%;
+    --primary-glow: 0 0% 90%;
+
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 8%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 210 100% 75%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 100%;
+
+    /* Fashion Tech Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-hero: linear-gradient(180deg, hsl(var(--background)), hsl(0 0% 4%));
+    --gradient-accent: linear-gradient(45deg, hsl(var(--accent)), hsl(215 100% 80%));
+    
+    /* Shadows & Effects */
+    --shadow-glow: 0 0 60px hsl(0 0% 100% / 0.3);
+    --shadow-elegant: 0 20px 40px -12px hsl(0 0% 0% / 0.8);
+    
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 8%;
+    --primary: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --muted: 0 0% 95%;
+    --border: 0 0% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-medium overflow-x-hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  /* Custom animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 20px hsl(0 0% 100% / 0.3);
+    }
+    to {
+      box-shadow: 0 0 40px hsl(0 0% 100% / 0.6);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
