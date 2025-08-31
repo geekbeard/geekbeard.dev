@@ -1,0 +1,7 @@
+title: GeekBeard
+url: https://geekbeard.dev
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /thoughts/:title/

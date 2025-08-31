@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}<p class="muted">{{ page.description }}</p>{% endif %}
+  {{ content }}
+  <p class="back"><a href="/">← back</a></p>
+</article>

@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GeekBeard - Fashion Technology</title>
-    <meta name="description" content="GeekBeard - Fashion Technology company and Enhance That partner" />
-    <meta name="author" content="GeekBeard B.V." />
 
-    <meta property="og:title" content="GeekBeard - Fashion Technology" />
-    <meta property="og:description" content="Fashion Technology company and Enhance That partner" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<head>
+  <meta charset="utf-8" />
+  <title>GeekBeard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark">
+  <style>
+    :root { --bg:#000; --fg:#fff; --accent:#ff4141; --max:720px; }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
+    body { font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, monospace;
+           padding:24px; display:flex; justify-content:center; }
+    main { width:100%; max-width:var(--max); }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    pre.ascii { font: 12px/1.1 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+                overflow:auto; padding:16px; border:1px solid #222; background:#0b0b0b; border-radius:6px; }
+    @media (min-width: 480px) { pre.ascii { font-size: 13px; } }
+    header, section { margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <pre class="ascii">
+_|_|_|_|    _|_|      _|_|_|  _|    _|  _|_|_|    _|_|    _|      _|      _|_|_|_|_|  _|_|_|_|    _|_|_|  _|    _|  
+_|        _|    _|  _|        _|    _|    _|    _|    _|  _|_|    _|          _|      _|        _|        _|    _|  
+_|_|_|    _|_|_|_|    _|_|    _|_|_|_|    _|    _|    _|  _|  _|  _|          _|      _|_|_|    _|        _|_|_|_|  
+_|        _|    _|        _|  _|    _|    _|    _|    _|  _|    _|_|          _|      _|        _|        _|    _|  
+_|        _|    _|  _|_|_|    _|    _|  _|_|_|    _|_|    _|      _|          _|      _|_|_|_|    _|_|_|  _|    _|  
+                                                                                                                    
+_|_|_|    _|_|_|        _|_|        _|        _|_|_|  _|_|_|_|  
+  _|    _|            _|    _|      _|          _|    _|        
+  _|      _|_|        _|_|_|_|      _|          _|    _|_|_|    
+  _|          _|      _|    _|      _|          _|    _|        
+_|_|_|  _|_|_|        _|    _|      _|_|_|_|  _|_|_|  _|_|_|_|  
+      </pre>
+    </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
-
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <section>
+      <p>Welcome to GeekBeard. Partner of <a href="https://enhancethat.fashion" target="_blank" rel="noopener">Enhance That</a></p>
+      <p>thoughts and reflections</p>
+      <ul>
+        <li><a href="/thoughts/perpetual-waste/">Perpetual Waste [wip]</a></li>
+        <li><a href="/thoughts/one-developer-power/">1 developer power [wip]</a></li>
+        <li><a href="/thoughts/if-only-someone-cared-to-work/">If only someone cared to work [wip]</a></li>
+      </ul>
+    </section>
+  </main>
+</body>
 </html>
+
