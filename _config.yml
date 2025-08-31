@@ -1,6 +1,7 @@
 title: GeekBeard
 url: https://geekbeard.dev
 baseurl: ""
+theme: null
 markdown: kramdown
 kramdown:
   input: GFM
