@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark">
   <style>
-    :root { --bg:#000; --fg:#fff; --accent:#ff4141; --max:720px; }
+    :root { --bg:#000; --fg:#fff; --accent:#1bb32f; --max:720px; }
     * { box-sizing: border-box; }
     html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
     body { font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, monospace;
@@ -16,8 +16,13 @@
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; }
     pre.ascii { font: 12px/1.1 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-                overflow:auto; padding:16px; border:1px solid #222; background:#0b0b0b; border-radius:6px; }
-    @media (min-width: 480px) { pre.ascii { font-size: 13px; } }
+                overflow: hidden; padding:16px; border:1px solid #222; background:#0b0b0b; border-radius:6px; 
+                white-space: pre; width: 100%; 
+                font-size: clamp(2px, 0.7vw, 8px); }
+    @media (max-width: 320px) { pre.ascii { font-size: clamp(1.5px, 0.5vw, 3px); padding: 6px; } }
+    @media (min-width: 321px) and (max-width: 480px) { pre.ascii { font-size: clamp(2px, 0.6vw, 4px); padding: 8px; } }
+    @media (min-width: 481px) and (max-width: 768px) { pre.ascii { font-size: clamp(2.5px, 0.8vw, 6px); padding: 12px; } }
+    @media (min-width: 769px) { pre.ascii { font-size: clamp(3px, 1vw, 8px); } }
     header, section { margin-bottom: 24px; }
   </style>
 </head>
@@ -43,6 +48,10 @@ _|_|_|  _|_|_|        _|    _|      _|_|_|_|  _|_|_|  _|_|_|_|
       <p>Welcome to GeekBeard. Partner of <a href="https://enhancethat.fashion" target="_blank" rel="noopener">Enhance That</a></p>
       <p>thoughts and reflections</p>
       <ul>
+        
+        Init
+        <li><a href="/thoughts/fashion-tech-is-a-lie/">Fashion Tech Is A Lie [wip]</a></li>
+        31 August 2025
         <li><a href="/thoughts/perpetual-waste/">Perpetual Waste [wip]</a></li>
         <li><a href="/thoughts/one-developer-power/">1 developer power [wip]</a></li>
         <li><a href="/thoughts/if-only-someone-cared-to-work/">If only someone cared to work [wip]</a></li>
