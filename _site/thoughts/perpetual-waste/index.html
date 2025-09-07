@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- DEFAULT-APPLIED -->
   <meta charset="utf-8" />
-  <title>{{ page.title }} — GeekBeard</title>
+  <title>Perpetual Waste — GeekBeard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark">
   <style>
-    :root { --bg:#000; --fg:#fff; --accent:#ff4141; --muted:#aaa; --max:720px; }
+    :root { --bg:#000; --fg:#fff; --accent:#1bb32f; --muted:#aaa; --max:720px; }
     * { box-sizing: border-box; }
     html, body { margin:0; padding:0; background:var(--bg) !important; color:var(--fg) !important; }
     body { font:16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, monospace;
@@ -29,8 +30,15 @@
 <body>
   <main>
     <header><a href="/" style="color:var(--fg); text-decoration:none">GEEKBEARD</a></header>
-    {{ content }}
-    <footer class="muted" style="margin-top:32px">© {{ site.time | date: '%Y' }} GeekBeard BV</footer>
+    <article>
+   <!-- ARTICLE-APPLIED -->
+  <h1>Perpetual Waste</h1>
+  <p class="muted">Wasting is in the core of many processes that run in the fashion brands today. It's easy to change, but then, the brands will need to stop being themselves.</p>
+  <p>[wip]</p>
+
+  <p class="back"><a href="/">← back</a></p>
+</article>
+    <footer class="muted" style="margin-top:32px">© 2025 GeekBeard BV</footer>
   </main>
 </body>
 </html>
