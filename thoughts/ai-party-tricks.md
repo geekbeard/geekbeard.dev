@@ -2,7 +2,7 @@
 layout: article
 title: AI Party Tricks in Fashion
 date: 07-Sep-2025
-state: published
+state: wip
 description: [work in progress]
 ---
 
