@@ -25,6 +25,15 @@
     table { border-collapse: collapse; width:100%; }
     th, td { border:1px solid #222; padding:8px; }
     .muted { color: var(--muted); }
+    pre.ascii { font: 12px/1.1 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+                overflow: hidden; padding:16px; border:1px solid #222; background:#0b0b0b; border-radius:6px; 
+                white-space: pre; width: 100%; 
+                font-size: clamp(2px, 0.7vw, 8px); }
+    @media (max-width: 320px) { pre.ascii { font-size: clamp(1.5px, 0.5vw, 3px); padding: 6px; } }
+    @media (min-width: 321px) and (max-width: 480px) { pre.ascii { font-size: clamp(2px, 0.6vw, 4px); padding: 8px; } }
+    @media (min-width: 481px) and (max-width: 768px) { pre.ascii { font-size: clamp(2.5px, 0.8vw, 6px); padding: 12px; } }
+    @media (min-width: 769px) { pre.ascii { font-size: clamp(3px, 1vw, 8px); } }
+    header, section { margin-bottom: 24px; }
   </style>
 </head>
 <body>
@@ -33,7 +42,7 @@
     <article>
    <!-- ARTICLE-APPLIED -->
   <h1>Perpetual Waste</h1>
-  <p class="muted">Wasting is in the core of many processes that run in the fashion brands today. It's easy to change, but then, the brands will need to stop being themselves.</p>
+  <p class="muted">work in progress</p>
   <p>[wip]</p>
 
   <p class="back"><a href="/">← back</a></p>

@@ -1,10 +1,10 @@
 ---
 layout: article
 title: AI Party Tricks in Fashion
+date: 07-Sep-2025
+state: published
 description: [work in progress]
 ---
-
-# AI as party tricks in fashion
 
 > We now have the technology that can be considered to be "computer vision". It recognizes the objects, human faces, silhouettes and also can track them, add overlays that follow the objects movements. The possibilities are overwhelming!
 >

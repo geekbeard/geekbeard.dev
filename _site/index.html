@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <!-- DEFAULT-APPLIED -->
   <meta charset="utf-8" />
-  <title>GeekBeard</title>
+  <title>GeekBeard — GeekBeard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark">
   <style>
-    :root { --bg:#000; --fg:#fff; --accent:#1bb32f; --max:720px; }
+    :root { --bg:#000; --fg:#fff; --accent:#1bb32f; --muted:#aaa; --max:720px; }
     * { box-sizing: border-box; }
-    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); }
-    body { font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, monospace;
+    html, body { margin:0; padding:0; background:var(--bg) !important; color:var(--fg) !important; }
+    body { font:16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, monospace;
            padding:24px; display:flex; justify-content:center; }
     main { width:100%; max-width:var(--max); }
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; }
+    h1,h2,h3 { margin:24px 0 8px; line-height:1.2; }
+    p, ul, ol { margin:12px 0; }
+    blockquote { border-left:3px solid #222; margin:12px 0; padding:8px 12px; color:var(--muted); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    pre { overflow:auto; padding:12px; border:1px solid #222; background:#0b0b0b; border-radius:6px; }
+    hr { border:0; border-top:1px solid #222; margin:24px 0; }
+    img, video { max-width:100%; height:auto; display:block; }
+    table { border-collapse: collapse; width:100%; }
+    th, td { border:1px solid #222; padding:8px; }
+    .muted { color: var(--muted); }
     pre.ascii { font: 12px/1.1 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
                 overflow: hidden; padding:16px; border:1px solid #222; background:#0b0b0b; border-radius:6px; 
                 white-space: pre; width: 100%; 
@@ -28,8 +38,9 @@
 </head>
 <body>
   <main>
+    <header><a href="/" style="color:var(--fg); text-decoration:none">GEEKBEARD</a></header>
     <header>
-      <pre class="ascii">
+  <pre class="ascii">
 _|_|_|_|    _|_|      _|_|_|  _|    _|  _|_|_|    _|_|    _|      _|      _|_|_|_|_|  _|_|_|_|    _|_|_|  _|    _|  
 _|        _|    _|  _|        _|    _|    _|    _|    _|  _|_|    _|          _|      _|        _|        _|    _|  
 _|_|_|    _|_|_|_|    _|_|    _|_|_|_|    _|    _|    _|  _|  _|  _|          _|      _|_|_|    _|        _|_|_|_|  
@@ -41,17 +52,22 @@ _|_|_|    _|_|_|        _|_|        _|        _|_|_|  _|_|_|_|
   _|      _|_|        _|_|_|_|      _|          _|    _|_|_|    
   _|          _|      _|    _|      _|          _|    _|        
 _|_|_|  _|_|_|        _|    _|      _|_|_|_|  _|_|_|  _|_|_|_|  
-      </pre>
-    </header>
+  </pre>
+</header>
 
-    <section>
-      <p>Welcome to GeekBeard. Partner of <a href="https://enhancethat.fashion" target="_blank" rel="noopener">Enhance That</a></p>
-      <p>thoughts and reflections</p>
-      <ul>
-        <li><a href="/thoughts/perpetual-waste/">Perpetual Waste [wip]</a></li>
-      </ul>
-    </section>
+<section>
+  <p>Welcome to GeekBeard. Partner of <a href="https://enhancethat.fashion" target="_blank" rel="noopener">Enhance That</a></p>
+  <p>thoughts and reflections</p>
+  <ul>
+    
+    
+      <li>[07-Sep-2025] <a href="/thoughts/ai-party-tricks/">AI Party Tricks in Fashion</a></li>
+    
+  </ul>
+</section>
+
+
+    <footer class="muted" style="margin-top:32px">© 2025 GeekBeard BV</footer>
   </main>
 </body>
 </html>
-
