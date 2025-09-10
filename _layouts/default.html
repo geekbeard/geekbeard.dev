@@ -3,9 +3,32 @@
 <head>
   <!-- DEFAULT-APPLIED -->
   <meta charset="utf-8" />
-  <title>{{ page.title }} — GeekBeard</title>
+  <title>{% if page.title %}{{ page.title }} — GeekBeard{% else %}{{ site.title }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}GeekBeard - thoughts and reflections on fashion tech, AI, and development. Partner of Enhance That.{% endif %}">
+  <meta name="author" content="GeekBeard">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} — GeekBeard{% else %}GeekBeard{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}GeekBeard - thoughts and reflections on fashion tech, AI, and development. Partner of Enhance That.{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'article' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/images/seo-img.png">
+  <meta property="og:site_name" content="GeekBeard">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — GeekBeard{% else %}GeekBeard{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}GeekBeard - thoughts and reflections on fashion tech, AI, and development. Partner of Enhance That.{% endif %}">
+  <meta name="twitter:image" content="{{ site.url }}/images/seo-img.png">
+  
+  <!-- Additional Meta Tags -->
+  {% if page.layout == 'article' and page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <style>
     :root { --bg:#000; --fg:#fff; --accent:#1bb32f; --muted:#aaa; --max:720px; }
     * { box-sizing: border-box; }
@@ -15,7 +38,7 @@
     main { width:100%; max-width:var(--max); }
     a { color:var(--accent); text-decoration:none; }
     a:hover { text-decoration:underline; }
-    h1,h2,h3 { margin:24px 0 8px; line-height:1.2; }
+    h1,h2,h3,h4,h5,h6 { margin:24px 0 8px; line-height:1.2; color:var(--accent); }
     p, ul, ol { margin:12px 0; }
     blockquote { border-left:3px solid #222; margin:12px 0; padding:8px 12px; color:var(--muted); }
     code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
