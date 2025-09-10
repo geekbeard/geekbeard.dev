@@ -55,4 +55,4 @@ Reasonable thought we can share is that “it’s too early” for global shifts
 
 Yes… I agree. It’s early.
 
-Though…Someone will be the first and everyone else will be *AFTER*. Let’s see:)
+Though… Someone will be the first and everyone else will be *AFTER*. Let’s see:)
